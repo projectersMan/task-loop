@@ -10,35 +10,25 @@ No vibes. No endless polishing. No scope creep.
 
 ## The Rule
 
-> Execute the next task only when it scores `85+`.
+> Execute the next task only when it reaches the configured confidence threshold.
 
-```text
-Total = User Value (30)
-      + Risk Reduction (25)
-      + Maintainability (20)
-      + Evidence (15)
-      + ROI (10)
-```
+The default threshold is `85`, but it is a human-configurable policy, not an
+empirically validated formula. Adjust it when the project has a clearer local
+standard for deciding whether the next action is justified.
 
-If the best task scores below `85`, stop and report why.
+If the best task scores below the configured threshold, stop and report why.
 
 ## The Loop
 
-1. Start from the real goal.
-2. Separate facts, constraints, and assumptions.
-3. Find the smallest useful next action.
-4. Score it.
-5. Execute one task.
-6. Verify the result.
-7. Loop, or stop cleanly.
+Goal -> Evidence -> Score -> One Move -> Verify -> Continue or Stop.
 
 ## Use It For
 
-- Autonomous coding sessions
-- Refactor follow-through
-- Post-task quality review
-- Roadmap continuation
-- Scope control
+Semi-automatic loop engineering:
+
+- Score the next move
+- Execute one verified step
+- Continue only with enough evidence
 
 ## Install
 
